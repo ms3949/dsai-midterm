@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+
+# Temporary files
+/tmp/
+check_db.py
+db_init.py

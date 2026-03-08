@@ -1,0 +1,16 @@
+id,name,lat,lng,zone
+1,Main St & 1st Ave,40.7128,-74.006,Downtown
+2,Broadway & 5th St,40.7145,-74.0035,Downtown
+3,Oak Rd & Elm Blvd,40.72,-74.01,Midtown
+4,Park Ave & 10th St,40.725,-74.008,Midtown
+5,River Dr & Bridge Ln,40.73,-74.015,Waterfront
+6,Cedar St & Pine Ave,40.718,-74.02,Westside
+7,Market St & 3rd Ave,40.711,-74.002,Downtown
+8,College Blvd & University Dr,40.735,-74.025,Uptown
+9,Harbor Rd & Dock St,40.709,-74.018,Waterfront
+10,Sunset Blvd & Vine St,40.74,-74.03,Uptown
+11,Industrial Way & Factory Rd,40.705,-74.035,Industrial
+12,Maple Dr & Birch Ln,40.722,-74.012,Midtown
+13,King St & Queen Ave,40.716,-74.0055,Downtown
+14,Lakeview Rd & Shore Dr,40.732,-74.022,Waterfront
+15,Highway 9 & Exit 12,40.7,-74.04,Industrial
