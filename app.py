@@ -13,7 +13,17 @@ import plotly.express as px
 from datetime import datetime
 
 # ── Config ──────────────────────────────────────────────────────────────────────
-API_BASE = os.environ.get("API_BASE_URL", st.secrets.get("API_BASE_URL", "http://localhost:8000"))
+def get_api_base():
+    if "API_BASE_URL" in os.environ:
+        return os.environ["API_BASE_URL"]
+    try:
+        if "API_BASE_URL" in st.secrets:
+            return st.secrets["API_BASE_URL"]
+    except Exception:
+        pass
+    return "http://localhost:8000"
+
+API_BASE = get_api_base()
 
 st.set_page_config(
     page_title="City Congestion Tracker",
@@ -33,7 +43,7 @@ st.markdown("""
 @st.cache_data(ttl=30)
 def fetch(path: str, **params):
     try:
-        r = requests.get(f"{API_BASE}{path}", params={k: v for k, v in params.items() if v is not None}, timeout=15)
+        r = requests.get(f"{API_BASE}{path}", params={k: v for k, v in params.items() if v is not None}, timeout=60)
         r.raise_for_status()
         return r.json()
     except Exception as e:
