@@ -2,7 +2,7 @@
 ### DL Challenge 2026 — Midterm Submission
 
 > A full-stack congestion monitoring system for city transportation authorities.  
-> **Live Dashboard:** https://ms3949-dsai-midterm-app.streamlit.app  
+> **Live Dashboard:** https://congestion-app.streamlit.app/  
 > **Live API:** https://congestion-app.vercel.app/docs  
 > **GitHub:** https://github.com/ms3949/dsai-midterm
 
